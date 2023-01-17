@@ -120,7 +120,7 @@ model = st.sidebar.selectbox('Select models', ('Bayesian Ridge','Linear Regressi
 # if model == 'Bayesian Ridge':
 #     #select pickle file
 #     model = pickle.load(open('bayesian_ridge.pkl','rb'))
-elif model == 'Linear Regression':
+if model == 'Linear Regression':
     #select pickle file
     model = pickle.load(open('LinearRegression.pkl','rb'))
 elif model == 'Extra Trees Regressor':
