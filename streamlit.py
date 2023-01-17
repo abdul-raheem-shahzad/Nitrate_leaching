@@ -20,22 +20,19 @@ st.header("Machine Learning and Deep Learning Based Nitrate Leaching Prediction 
 # measurement_depth_m = st.slider('Select the measurement depth (m)', 0, 10)
 # fertilizer_rate_kg = st.slider('Select the fertilizer rate (kg N/ha)', 0, 100)
 
-#enter initial values
-soil_pH = 7.0
-soil_pH = st.number_input('Enter the soil pH 3.9 ~ 8.5')
 #set default value of soc_per
 soc_per = 6.7
-soc_per = st.number_input('Enter the soil organic carbon (%) 0 ~ 13.5')
+soc_per = st.number_input('Enter the soil organic carbon (%) 0 ~ 13.5',default=6.7)
 som_per = 11.3
-som_per = st.number_input('Enter the soil organic matter (%) 0 ~ 23.22')
+som_per = st.number_input('Enter the soil organic matter (%) 0 ~ 23.22',default=11.3)
 soil_total_N = 0.5
-soil_total_N = st.number_input('Enter the soil total N 0 ~ 0.95')
+soil_total_N = st.number_input('Enter the soil total N 0 ~ 0.95',default=0.5)
 mean_rainfal_mm = 500
-mean_rainfal_mm = st.number_input('Enter the mean rainfall (mm) 170 ~ 2500')
+mean_rainfal_mm = st.number_input('Enter the mean rainfall (mm) 170 ~ 2500',default=500)
 measurement_depth_m = 0.5
-measurement_depth_m = st.number_input('Enter the measurement depth (m) 0.25 ~ 2.40')
+measurement_depth_m = st.number_input('Enter the measurement depth (m) 0.25 ~ 2.40',default=0.5)
 fertilizer_rate_kg = 400
-fertilizer_rate_kg = st.number_input('Enter the fertilizer rate (kg N/ha) 0 ~ 1800')
+fertilizer_rate_kg = st.number_input('Enter the fertilizer rate (kg N/ha) 0 ~ 1800',default=400)
 
 
 
