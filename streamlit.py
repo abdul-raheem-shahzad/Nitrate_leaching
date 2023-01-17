@@ -174,7 +174,7 @@ if st.button('Predict'):
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown('<p class="big-font">The predicted nitrate leaching is {}'.format(output)</p>', unsafe_allow_html=True
+st.markdown('<p class="big-font">output</p>', unsafe_allow_html=True
     #st.error('The predicted nitrate leaching is {}'.format(output)+'kg N/ha')
 
 
