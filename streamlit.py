@@ -137,7 +137,7 @@ if model == 'Bayesian Ridge':
     model = pickle.load(open('bayesian_ridge.pkl','rb'))
 elif model == 'Linear Regression':
     #select pickle file
-    model = pickle.load(open('LinearRegression().pkl','rb'))
+    model = pickle.load(open('RandomForestRegressor().pkl','rb'))
 elif model == 'Random Forest':
     #select pickle file
     model = pickle.load(open('LinearRegression().pkl','rb'))
