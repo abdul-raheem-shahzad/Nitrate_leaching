@@ -7,6 +7,8 @@ import seaborn as sns
 import pickle
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.pipeline import make_pipeline
+import tensorflow
+from tensorflow.keras.models import load_model
 #write heading
 st.title("Machine Learning and Deep Learning Based Nitrate Leaching Prediction in Irrigated Agriculture")
 #slider to select numeric columns
