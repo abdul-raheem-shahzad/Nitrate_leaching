@@ -68,6 +68,13 @@ elif soil_texture == 'Fine':
 elif soil_texture == 'Medium':
     soil_texture = 3
 fertiisation_method = st.selectbox('Select the fertiisation method', ('Split dose', 'Full dose', 'Others'))
+#convert categorcal input to numeric
+if fertiisation_method == 'Split dose':
+    fertiisation_method = 0
+elif fertiisation_method == 'Full dose':
+    fertiisation_method = 1
+elif fertiisation_method == 'Others':
+    fertiisation_method = 2
 fertilizer_name = st.selectbox('Select the fertilizer_name',('CAN', 'Urea', 'Manure', 'Others', 'Complex', 'Cattle slurry', 'Ammonium based',
  'Compost', 'Biogas slurry', 'Pig slurry', 'Animal urine'))
 
