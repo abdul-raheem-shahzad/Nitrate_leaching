@@ -134,7 +134,7 @@ elif fertilizer_type == 'Organic':
 
 #side paned to select the model
 st.sidebar.title("Select the model")
-model = st.sidebar.selectbox('Select models', ('Bayesian Ridge','Linear Regression','Extra Tree Regrssor','Random Forest','Neural Network'))
+model = st.sidebar.selectbox('Select models', ('Bayesian Ridge','Linear Regression','Random Forest','Neural Network'))
 if model == 'Bayesian Ridge':
     #select pickle file
     model = pickle.load(open('bayesian_ridge.pkl','rb'))
