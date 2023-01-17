@@ -19,7 +19,7 @@ st.header("Machine Learning and Deep Learning Based Nitrate Leaching Prediction 
 # mean_rainfal_mm = st.slider('Select the mean rainfall (mm)', 0, 1000)
 # measurement_depth_m = st.slider('Select the measurement depth (m)', 0, 10)
 # fertilizer_rate_kg = st.slider('Select the fertilizer rate (kg N/ha)', 0, 100)
-
+soil_pH = st.number_input('Enter the soil pH 3.9 ~ 8.5',default=7.5)
 soc_per = st.number_input('Enter the soil organic carbon (%) 0 ~ 13.5')
 som_per = 11.3
 som_per = st.number_input('Enter the soil organic matter (%) 0 ~ 23.22')
