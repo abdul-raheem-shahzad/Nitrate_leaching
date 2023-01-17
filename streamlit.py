@@ -166,7 +166,7 @@ fertilizer_type = int(fertilizer_type)
 if st.button('Predict'):
     output = model.predict([[soil_pH, soc_per, som_per, soil_total_N, mean_rainfal_mm, measurement_depth_m, fertilizer_rate_kg, crop_type, experiment_type, ph_class, soil_texture, fertiisation_method, fertilizer_name, measuring_method, fertilizer_type]])
     st.header("Nitrate Leaching")
-    Output = '<p style="font-family:Courier; color:Red; font-size: 40px;">'The predicted nitrate leaching is {}'.format(output)+'kg N/ha'</p>'
+    Output = <p style="font-family:Courier; color:Red; font-size: 40px;">'The predicted nitrate leaching is {}'.format(output)+'kg N/ha'</p>
     st.markdown(original_title, unsafe_allow_html=True)
     #st.error('The predicted nitrate leaching is {}'.format(output)+'kg N/ha')
 
