@@ -5,6 +5,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pickle
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.pipeline import make_pipeline
 #write heading
 st.title("Machine Learning and Deep Learning Based Nitrate Leaching Prediction in Irrigated Agriculture")
 #slider to select numeric columns
