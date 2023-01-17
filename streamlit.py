@@ -110,10 +110,13 @@ st.sidebar.title("Select the model")
 model = st.sidebar.selectbox('Select models', ('Bayesian Ridge','Linear Regression','Neural Network'))
 if model == 'Bayesian Ridge':
     #select pickle file
-    model = pickle.load(open('bayesian.pkl','rb'))
+    model = pickle.load(open('bayesian_ridge.pkl','rb'))
 elif model == 'Linear Regression':
     #select pickle file
-    model = pickle.load(open('linear.pkl','rb'))
+    model = pickle.load(open('LinearRegression.pkl','rb'))
+elif model == 'Extra Trees Regressor':
+    #select pickle file
+    model = pickle.load(open('ExtraTreesRegressor.pkl','rb'))
 elif model == 'Neural Network':
     #select h5 file
     model = load_model('model.h5')
