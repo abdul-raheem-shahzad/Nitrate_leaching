@@ -112,7 +112,20 @@ elif fertilizer_name == 'Pig slurry':
     fertilizer_name = 9
 
 measuring_method = st.selectbox('Select the measuring method', ('Porous cups', 'Lysimeter', 'Others'))
+#convert categorcal input to numeric
+if measuring_method == 'Porous cups':
+    measuring_method = 0
+elif measuring_method == 'Lysimeter':
+    measuring_method = 1
+elif measuring_method == 'Others':
+    measuring_method = 2
+
 fertilizer_type = st.selectbox('Select the fertilizer type', ('Synthetic', 'Organic'))
+#convert categorcal input to numeric
+if fertilizer_type == 'Synthetic':
+    fertilizer_type = 0
+elif fertilizer_type == 'Organic':
+    fertilizer_type = 1
 
 #side paned to select the model
 st.sidebar.title("Select the model")
