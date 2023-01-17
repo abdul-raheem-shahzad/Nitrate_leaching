@@ -10,7 +10,7 @@ from sklearn.pipeline import make_pipeline
 import tensorflow
 from tensorflow.keras.models import load_model
 #write heading
-st.title("Machine Learning and Deep Learning Based Nitrate Leaching Prediction in Irrigated Agriculture")
+st.header("Machine Learning and Deep Learning Based Nitrate Leaching Prediction in Irrigated Agriculture")
 #slider to select numeric columns
 # soil_pH = st.slider('Select the soil pH', 0, 14)
 # soc_per = st.slider('Select the soil organic carbon (%)', 0, 100)
@@ -165,8 +165,8 @@ fertilizer_type = int(fertilizer_type)
 #predict the output
 if st.button('Predict'):
     output = model.predict([[soil_pH, soc_per, som_per, soil_total_N, mean_rainfal_mm, measurement_depth_m, fertilizer_rate_kg, crop_type, experiment_type, ph_class, soil_texture, fertiisation_method, fertilizer_name, measuring_method, fertilizer_type]])
-    st.header('The predicted nitrate leaching is {}'.format(output + 'kg N/ha'))
-    #st.success('The predicted nitrate leaching is {}'.format(output)+'kg N/ha')
+    st.subheader("Nitrate Leaching")
+    st.success('The predicted nitrate leaching is {}'.format(output)+'kg N/ha')
 
 
 
